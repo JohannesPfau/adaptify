@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FubiRecognizers globalMinConfidence="0.51" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hcm-lab.de http://www.hcm-lab.de/downloads/FubiRecognizers.xsd" xmlns="http://www.hcm-lab.de">
+<!-- Starting position: Neutral standing position. End position: Undefined. -->
+
+<!-- %%%% Main Recognizer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- This recognizer describes a step to the left or the right from a neutral standing position. -->
+<!-- Due to unknown circumstances while tracking it seems to not really make a difference which foot moves to which side. I suspect the   -->
+<!-- coordinates are calculated relative to a point that is itself dynamically calculated in the middle of the two joints in question.    -->
+<!-- Thus, moving the right foot to the right seems to produce the same result as moving everything except the right foot away from it    -->
+<!-- to the left. If position (0|0) is dynamically recalculated this could explain why both motions seem to produce the same change       -->
+<!-- along the x-axis -->
+<CombinationRecognizer name="Seitschritt">
+	<State minDuration="0.2">	<!-- Adjust this value to change the minimum duration of this state *1 -->
+		<Recognizer name="FeetAreWideApart"/>
+		<Recognizer name="LeftFootLeft"/>
+		<AlternativeRecognizers>
+			<Recognizer name="FeetAreWideApart"/>
+			<Recognizer name="RightFootRight"/>
+        </AlternativeRecognizers>
+	</State>
+</CombinationRecognizer>
+
+<!-- %%%% Recognizer Parts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+
+<LinearMovementRecognizer name="LeftFootLeft">
+	<Joints main="leftFoot" relative="rightfoot"/>
+	<Direction x="-1" y="0" z="0"/>
+	<Speed min="400"/>			<!-- Adjust this value to adjust the minimum speed of the main joint! *2 -->
+</LinearMovementRecognizer>
+
+<LinearMovementRecognizer name="RightFootRight">
+	<Joints main="rightFoot" relative="leftfoot"/>
+	<Direction x="1" y="0" z="0"/>
+	<Speed min="400"/>			<!-- Adjust this value to adjust the minimum speed of the main joint! *2 -->
+</LinearMovementRecognizer>
+
+<!-- Recognizing feet being approximately shoulder wide apart -->	
+<JointRelationRecognizer name="FeetAreWideApart">
+	<Joints main="rightFoot" relative="leftFoot"/>
+	<MinValues dist="400"/>		<!-- Adjust this value to adjust the distance between the users feet! *3 -->
+</JointRelationRecognizer>
+
+<!--*1 The values are measured in seconds. Thus, 1 equals one second while 0.1 equals 100 milliseconds -->
+<!--*2 A minimum speed of 2000 units equals 2m/s movement speed in real life -->
+<!--*3 The values are measured in millimeters and refer to the distance of the right foot to the left foot. -->
+	
+</FubiRecognizers>

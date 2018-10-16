@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FubiRecognizers globalMinConfidence="0.51" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hcm-lab.de http://www.hcm-lab.de/downloads/FubiRecognizers.xsd" xmlns="http://www.hcm-lab.de">
+<!-- Starting position: Neutral standing position. End position: Undefined. -->
+
+<!-- %%%% Main Recognizer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- This recognizer describes moving ones hip in a circular motion from the left to the right. -->
+<CombinationRecognizer name="HüftkreisenLinks">
+	<State minDuration="0.05" maxDuration="1.2" timeForTransition="0.4">	<!-- Adjust this value to change the minimum duration of this state as well as the time for transition between states *1 -->
+		<Recognizer name="HipBack"/>
+	</State>
+	<State minDuration="0.05" maxDuration="1.2" timeForTransition="0.4">	<!-- Adjust this value to change the minimum duration of this state as well as the time for transition between states *1 -->
+		<Recognizer name="HipRight"/>
+	</State>
+</CombinationRecognizer>
+
+<!-- %%%% Recognizer Parts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+
+<!-- Recognizing the hip being sticked to the right -->
+<JointRelationRecognizer name="HipRight">
+	<Joints main="rightHip" relative="head"/>
+	<MaxValues x="-3"/>		<!-- Adjust these values to change how far the hip has to be stuck out to the right! 2* -->
+	<MinValues x="-100"/>
+</JointRelationRecognizer>
+
+<!-- Recognizing the hip being sticked to the back -->
+<JointRelationRecognizer name="HipBack">
+	<Joints main="leftHip" relative="head"/>
+	<MaxValues z="-10"/>		<!-- Adjust these values to change how far the hip has to be stuck out to the back!  2* -->
+	<MinValues z="-100"/>
+</JointRelationRecognizer>
+
+<!--*1 The values are measured in seconds. Thus, 1 equals one second while 0.1 equals 100 milliseconds -->
+<!--*2 The values are measured in millimeters and refer to movement on the specified axis. -->
+	
+</FubiRecognizers>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FubiRecognizers globalMinConfidence="0.51" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hcm-lab.de http://www.hcm-lab.de/downloads/FubiRecognizers.xsd" xmlns="http://www.hcm-lab.de">
+<!-- Starting position: Neutral standing position. End position: Undefined. -->
+
+<!-- This recognizer describes walking on the spot. It specifically checks for the player to make his first step with the right leg. It can track -->
+<!-- continuous walking on the spot. It is not cheat proof ! -->
+<CombinationRecognizer name="GehenAufDerStelleRechtsLinks" waitUntilLastStateRecognizersStop="true">
+	<State minDuration="0.05" maxDuration="3" timeForTransition="0.4">		<!-- Adjust this value to change the minimum duration of this state as well as the time for transition between states *1 -->
+		<Recognizer name="LeftHandHigherThanRightHand" ignoreOnTrackingError="true"/>
+		<Recognizer name="RightKneeHigherThanLeftKnee"/>
+	</State>
+	<State minDuration="0.05" maxDuration="1.2" timeForTransition="0.4">	<!-- Adjust this value to change the minimum duration of this state as well as the time for transition between states *1 -->
+		<Recognizer name="RightHandHigherThanLeftHand" ignoreOnTrackingError="true"/>
+		<Recognizer name="LeftKneeHigherThanRightKnee"/>
+	</State>
+</CombinationRecognizer>
+
+<!-- %%%% Recognizer Parts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+
+<!-- Recognizers wether or not the left knee is higher than the right knee -->
+<JointRelationRecognizer name="LeftKneeHigherThanRightKnee">
+	<Joints main="leftKnee" relative="rightKnee"/>
+	<MinValues y="40"/>		<!-- Adjust these values to adjust the tolerance for the left knee!  *2     -->
+</JointRelationRecognizer>
+
+<!-- Recognizes wether or not the left knee is higher than the right knee -->
+<JointRelationRecognizer name="RightKneeHigherThanLeftKnee">
+	<Joints main="rightKnee" relative="leftKnee"/>
+	<MinValues y="40"/>		<!-- Adjust these values to adjust the tolerance for the right knee! *2     -->
+</JointRelationRecognizer>
+
+<!-- Recognizes wether or not the left hand is higher than the right hand -->
+<JointRelationRecognizer name="LeftHandHigherThanRightHand">
+	<Joints main="leftHand" relative="rightHand"/>
+	<MinValues y="40"/>		<!-- Adjust these values to adjust the arm tolerance for the left hand!  *2 -->
+</JointRelationRecognizer>
+
+<!-- Recognizes wether or not the right hand is higher than the left hand -->	
+<JointRelationRecognizer name="RightHandHigherThanLeftHand">
+	<Joints main="rightHand" relative="leftHand"/>
+	<MinValues y="40"/>		<!-- Adjust these values to adjust the arm tolerance for the right hand! *2 -->
+</JointRelationRecognizer>
+
+<!--*1 The values are measured in seconds. Thus, 1 equals one second while 0.1 equals 100 milliseconds -->
+<!--*2 The values are measured in millimeters and refer to the height (y-axis) of the hand/knee relative to the position of the shoulder/hip. -->	
+	
+</FubiRecognizers>

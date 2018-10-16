@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/VacuumShaders/Mesh Materializer/Example Scenes/2. Faceted (low poly)
+    effect.unity
+  isLoaded: 1
+  isActive: 1

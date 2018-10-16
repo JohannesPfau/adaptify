@@ -1,0 +1,79 @@
+Einbindungsgefühl in die Spielwelt:
+Belohnungsgotthologramm auf Marktplatz + Deko?
+Fog of war
+semi-automatische kamerasteuerung
+Missionsziel: Bauen von "Monument": 
+	Klein: Freibad, Gasthaus, Bauernhof
+	Mittel: Segelboot, Bibliothek, Museum, Fabrik, Krankenhaus, Leuchtturm
+	Groß:	Kathedrale, Stadion, Universität
+
+
+Gehen auf der Stelle:	MARKTPLATZ ZUSAMMENTROMMELN wenn Ende, sonst +SPEED
+Boxen im Stand: 		HOLZ 
+Diagonale Rumpfbeuge:	FELD ABERNTEN											(Unkraut?)
+Rumpfbeuge:				REGEN												
+Einbein-Stand: 			TAG/NACHT
+Hüftkreisen: 			WIND
+Rumpfrotation: 			INSEL ENTDECKEN														(Fog of War vertreiben)
+Seitneige:				
+Seitschritt: 			KRAN
+			
+
+
+Unity Technologies ApS
+Zahlung
+Laden der Transaktionsdetails zu
+Unity Technologies ApS
+Zahlung
+- Minus 21,27 erstatten lassen
+
+
+Nicht mehr: zoom in/out by walking closer/far away
+input space: milestones, gestures, 
+output space:
+
+gebäude:
+Solaranlage	=> produziert Strom, wenn Sonne an
+Windrad => produziert Strom, wenn Wind
+Windmühle => produziert Nahrung, wenn Wind
+Feld => erzeugt Nahrung, wenn bearbeitet+bewässert
+Holzfällerhütte => Erhöht Rohstoffgewinn beim Baumfällen
+? Hafen => Erhöht Nahrung, kann nur am Wasser gebaut werden
+
+Silo => Mehr Nahrung lagern
+Wasserturm => Speichert Wasser
+
+wetter:
+regen
+wind
+
+bedürfnisse:
+Nahrung
+Motivation
+Rohstoffe
+Strom
+
+Eine Übungseinheit:
+2 Minute Gehen auf der Stelle
+3x 20 Sek Einbeinstand Links
+3x 20 Sek Einbeinstand Rechts
+10x Rumpfrotation
+2 Min Boxen im Stand
+10x Hüftkreisen
+8x Diagonale Rumpfbeuge Links
+8x Diagonale Rumpfbeuge Rechts
+5x Rumpfbeuge
+8x Seitneige rechts
+8x Seitneige Links
+8x Seitschritt rechts
+8x Seitschritt links
+
+
+Insel entdecken (Hubschrauber):
+Kamera von x= 256 y= 25 z=256
+		rot x= 90 y= 0	z=0
+		
+		nach x= 256 y=300 z=256
+		danach "0"-position
+		
+		

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FubiRecognizers globalMinConfidence="0.51" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hcm-lab.de http://www.hcm-lab.de/downloads/FubiRecognizers.xsd" xmlns="http://www.hcm-lab.de">
+<!-- Starting position: Neutral standing position. End position: Undefined. -->
+
+<!-- %%%% Main Recognizer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- This recognizer describes a one legged stand on the left foot. Position and relation of arms or other parts of the body are not tracked. -->
+<CombinationRecognizer name="EinBeinStandLinksOhneArmTracking">
+	<State minDuration="0.1">	<!-- Adjust this value to change the minimum duration of this state *1 -->
+      <Recognizer name="RightLegCocked"/>
+    </State>
+</CombinationRecognizer>
+
+<!-- %%%% Recognizer Parts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+
+<!-- Recognizing the right leg being elevated -->
+<!-- Only the relation of hip and knee are taken into account. Note: This is not cheat proof! Sitting yields the same results! -->
+<JointRelationRecognizer name= "RightLegCocked">
+	<Joints main="rightHip" relative="rightKnee"/>
+	<MaxValues y="150"/>		<!-- Adjust these values to adjust the tolerance for the right leg! *2 -->
+	<MinValues y="-150"/>
+</JointRelationRecognizer>
+	
+<!--*1 The values are measured in seconds. Thus, 1 equals one second while 0.1 equals 100 milliseconds -->	
+<!--*2 The values are measured in millimeters and refer to the height (y-axis) of the knee/hand relative to the position of the hip/shoulder. -->
+	
+</FubiRecognizers>

@@ -1,0 +1,17 @@
+********************************************************************************
+*                             Initializing Cubiquity                           *
+********************************************************************************
+[13:48:43, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/39D4C1E4.vdb'
+[13:48:48, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/townHall.vdb'
+[13:48:48, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/heli.vdb'
+[13:48:48, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/heliWings.vdb'
+[13:48:48, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/house2.vdb'
+[13:48:48, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/timeline.vdb'
+[13:48:48, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/timelineNight.vdb'
+[13:48:49, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/moon.vdb'
+[13:48:49, Info   ]: Creating voxel database from 'D:/Adaptify/games/trunk/Demonstrator3/Demonstrator3/Builds/v3_Data/StreamingAssets/Cubiquity/VoxelDatabases/sun.vdb'
+[13:49:05, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+********************************************************************************
+*                             Shutting down Cubiquity                          *
+********************************************************************************
+

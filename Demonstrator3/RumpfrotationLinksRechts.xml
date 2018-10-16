@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FubiRecognizers globalMinConfidence="0.51" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hcm-lab.de http://www.hcm-lab.de/downloads/FubiRecognizers.xsd" xmlns="http://www.hcm-lab.de">
+<!-- Starting position: Neutral standing position. End position: Undefined. -->
+
+<!-- %%%% Main Recognizer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- This recognizer describes a horizontal turn of the torso with arms extended to the sides. After taking the initial position (feet shoulder -->
+<!-- wide apart and arms extended to the sides) turn the torso to the left and then to the right.                   							-->
+<CombinationRecognizer name="RumpfrotationLinksRechts" waitUntilLastStateRecognizersStop="true">
+	<State minDuration="0.2" timeForTransition="1">		<!-- Adjust this value to change the minimum duration of this state as well as the time for transition between states *1 -->
+		<Recognizer name="FeetAreShoulderWideApart"/>
+<!-- ignoreOnTrackingError used, so it still works if shoulders or hands are lost -->
+		<Recognizer name="LeftHandOnShoulderHeight" ignoreOnTrackingError="true"/>
+		<Recognizer name="RightHandOnShoulderHeight" ignoreOnTrackingError="true"/>
+		<Recognizer name="RotateTorsoToTheLeft"/>
+	</State>
+	<State minDuration="0.1" timeForTransition="1">		<!-- Adjust this value to change the minimum duration of this state as well as the time for transition between states *1 -->
+		<Recognizer name="FeetAreShoulderWideApart"/>
+<!-- ignoreOnTrackingError used, so it still works if shoulders or hands are lost -->
+		<Recognizer name="LeftHandOnShoulderHeight" ignoreOnTrackingError="true"/>
+		<Recognizer name="RightHandOnShoulderHeight" ignoreOnTrackingError="true"/>
+	</State>
+	<State minDuration="0.2" timeForTransition="1">		<!-- Adjust this value to change the minimum duration of this state as well as the time for transition between states *1 -->
+		<Recognizer name="FeetAreShoulderWideApart"/>
+<!-- ignoreOnTrackingError used, so it still works if shoulders or hands are lost -->
+		<Recognizer name="LeftHandOnShoulderHeight" ignoreOnTrackingError="true"/>
+		<Recognizer name="RightHandOnShoulderHeight" ignoreOnTrackingError="true"/>
+		<Recognizer name="RotateTorsoToTheRight"/>
+	</State>
+</CombinationRecognizer>
+
+<!-- %%%% Recognizer Parts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+
+<!-- Recognizing the torso being rotated to the left-->
+<JointOrientationRecognizer name="RotateTorsoToTheLeft">
+	<Joint name="torso"/>
+	<MaxDegrees y="70"/>		<!-- Adjust these values to adjust the tolerance in rotation to the left for the torso  *2 -->
+	<MinDegrees y="20"/>
+</JointOrientationRecognizer>
+
+<!-- Recognizing the torso being rotated to the right-->
+<JointOrientationRecognizer name="RotateTorsoToTheRight">
+	<Joint name="torso"/>
+	<MaxDegrees y="-20"/>		<!-- Adjust these values to adjust the tolerance in rotation to the right for the torso *2 -->
+	<MinDegrees y="-70"/>
+</JointOrientationRecognizer>
+
+<!-- Recognizing the left arm being extended-->
+<!-- For this recognizer we only check for the relation of the shoulder and the hand. A major part of adaptifys target group is elderly people. -->
+<!-- Since we do not want elbow flexibility to be a factor in this exercise we allow arms to be bend as long as they are extended to the sides. -->
+<JointRelationRecognizer name="LeftHandOnShoulderHeight">
+	<Joints main="leftHand" relative="leftShoulder"/>
+    <MaxValues y="450"/>		<!-- Adjust these values to adjust the arm tolerance for the left arm! *3 -->
+    <MinValues y="-450"/>
+</JointRelationRecognizer>
+
+<!-- Recognizing the right arm being extended-->
+<!-- For this recognizer we only check for the relation of the shoulder and the hand. A major part of adaptifys target group is elderly people. -->
+<!-- Since we do not want elbow flexibility to be a factor in this exercise we allow arms to be bend as long as they are extended to the sides. -->
+<JointRelationRecognizer name="RightHandOnShoulderHeight">
+	<Joints main="rightHand" relative="rightShoulder"/>
+    <MaxValues y="450"/>		<!-- Adjust these values to adjust the arm tolerance for the right arm! *3 -->
+    <MinValues y="-450"/>	
+</JointRelationRecognizer>
+
+<!-- Recognizing feet being approximately shoulder wide apart -->	
+<JointRelationRecognizer name="FeetAreShoulderWideApart">
+	<Joints main="rightFoot" relative="leftFoot"/>
+	<MinValues dist="350"/>		<!-- Adjust this value to adjust the distance between the users feet! *4 -->
+</JointRelationRecognizer>
+
+<!--*1 The values are measured in seconds. Thus, 1 equals one second while 0.1 equals 100 milliseconds -->
+<!--*2 The values are measured in angular degrees. An exact vertical line orthogonal to the floor is regarded as 0 degrees -->
+<!--*3 The values are measured in millimeters and refer to the height (y-axis) of the hand/knee relative to the position of the shoulder/hip. -->
+<!--*4 The values are measured in millimeters and refer to the distance of the right foot to the left foot. -->
+
+</FubiRecognizers>

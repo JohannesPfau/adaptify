@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FubiRecognizers globalMinConfidence="0.51" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hcm-lab.de http://www.hcm-lab.de/downloads/FubiRecognizers.xsd" xmlns="http://www.hcm-lab.de">
+<!-- Starting position: Neutral standing position. End position: Undefined. -->
+
+<!-- %%%% Main Recognizer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- This recognizer describes a one legged stand on the right foot. It prohibits balancing efforts through arm extension to either side. -->
+<!-- Arms casualy hanging down the side of the body are allowed. -->
+<CombinationRecognizer name="EinBeinStandRechtsOhneArme">
+	<State minDuration="0.1"> 	<!-- Adjust this value to change the minimum duration of this state *1 -->
+      <NotRecognizer name="LeftHandOnShoulderHeight"/>
+      <NotRecognizer name="RightHandOnShoulderHeight"/>
+      <Recognizer name="LeftLegCocked"/>
+    </State>
+</CombinationRecognizer>
+
+<!-- %%%% Recognizer Parts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> 
+
+<!-- Recognizing the left arm being extended-->
+<!-- For this recognizer we only check for the relation of the shoulder and the hand. A major part of adaptify's target group is elderly people. -->
+<!-- Since we do not want elbow flexibility to be a factor in this exercise we allow arms to be bend as long as they are extended to the sides.  -->
+<JointRelationRecognizer name= "LeftHandOnShoulderHeight">
+	<Joints main="leftHand" relative="leftShoulder"/>
+    <MaxValues y="400"/>    	<!-- Adjust these values to adjust the arm tolerance for the left arm! *2 -->
+    <MinValues y="-400"/>
+</JointRelationRecognizer>
+
+<!-- Recognizing the right arm being extended-->
+<!-- For this recognizer we only check for the relation of the shoulder and the hand. A major part of adaptifys target group is elderly people.  -->
+<!-- Since we do not want elbow flexibility to be a factor in this exercise we allow arms to be bend as long as they are extended to the sides.  -->
+<JointRelationRecognizer name= "RightHandOnShoulderHeight">
+	<Joints main="rightHand" relative="rightShoulder"/>
+    <MaxValues y="400"/>		<!-- Adjust these values to adjust the arm tolerance for the right arm! *2 -->
+    <MinValues y="-400"/>
+</JointRelationRecognizer>
+
+<!-- Recognizing the left leg being elevated -->
+<!-- Only the relation of hip and knee are taken into account. This is not cheat proof. Sitting yields the same results! -->
+<JointRelationRecognizer name= "LeftLegCocked">
+	<Joints main="leftHip" relative="leftKnee"/>
+	<MaxValues y="150"/>		<!-- Adjust these values to adjust the arm tolerance for the left leg!  *2 -->
+	<MinValues y="-150"/>
+</JointRelationRecognizer>
+	
+<!--*1 The values are measured in seconds. Thus, 1 equals one second while 0.1 equals 100 milliseconds -->		
+<!--*2 The values are measured in millimeters and refer to the height (y-axis) of the hand/knee relative to the position of the shoulder/hip. -->	
+	
+</FubiRecognizers>

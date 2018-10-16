@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FubiRecognizers globalMinConfidence="0.51" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://www.hcm-lab.de http://www.hcm-lab.de/downloads/FubiRecognizers.xsd" xmlns="http://www.hcm-lab.de">
+<!-- Starting position: Neutral standing position. End position: Undefined. -->
+
+<!-- %%%% Main Recognizer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- This recognizer describes a bend from the hips towards the floor while trying to reach towards the floor with the left hand. The left hand -->
+<!-- needs to reach under the right knee so that it crosses the vertical center of the body  -->
+<CombinationRecognizer name="DiagonaleRumpfbeugeRechts">
+	<State minDuration="0.1">		<!-- Adjust this value to change the minimum duration of this state *1 -->
+		<Recognizer name="leanRight" ignoreOnTrackingError="true"/>
+		<Recognizer name="leanForward"/>
+		<Recognizer name="LeftHandBelowRightKnee" ignoreOnTrackingError="true"/>
+	</State>
+</CombinationRecognizer>
+
+<!-- %%%% Recognizer Parts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!-- Recognizing if the torso is leaned forward -->
+<JointOrientationRecognizer name="leanForward">
+	<Joint name="torso"/>
+	<MaxDegrees x="-20"/>			<!-- Adjust these values to adjust the angle in which a lean forward is detected! *2 -->
+    <MinDegrees x="-95"/>
+</JointOrientationRecognizer>
+
+<!-- Recognizing if the torso is leaned to the right -->
+<JointOrientationRecognizer name="leanRight">
+	<Joint name="torso"/>
+	<MaxDegrees z="-10"/>			<!-- Adjust these values to adjust the angle in which a lean right is detected! *2 -->
+    <MinDegrees z="-95"/>
+</JointOrientationRecognizer>
+
+<!-- Recognizing if the right hand is below the left knee. -->
+<JointRelationRecognizer name="LeftHandBelowRightKnee">
+	<Joints main="leftHand" relative="rightKnee"/>
+	<MaxValues x="200"/>			<!-- Adjust these values to adjust how far the hand has to be placed left or right of the knee! *3 -->
+	<MinValues x="-200"/>
+	<Relation type="below"/>
+</JointRelationRecognizer>
+
+	
+<!--*1 The values are measured in seconds. Thus, 1 equals one second while 0.1 equals 100 milliseconds -->	
+<!--*2 The values are measured in angular degrees. An exact vertical line orthogonal to the floor is regarded as 0 degrees-->
+<!--*3 The values are measured in millimeters and refer to the horizontal distance (x-axis) of the hand relative to the position of the knee. -->	
+	
+</FubiRecognizers>

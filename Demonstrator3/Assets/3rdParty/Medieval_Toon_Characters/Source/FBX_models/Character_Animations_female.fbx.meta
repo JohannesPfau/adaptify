@@ -1,0 +1,765 @@
+fileFormatVersion: 2
+guid: d74e2473c4e9b4940ad796a2565a086b
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bones_Grp
+    100002: Char_1:Mesh
+    100004: //RootNode
+    100006: Geometry
+    100008: Head01
+    100010: joint1
+    100012: l_clavicle01
+    100014: l_elbow01
+    100016: l_foot01
+    100018: l_hand
+    100020: l_hip01
+    100022: l_knee01
+    100024: l_shoulder01
+    100026: l_toe01
+    100028: l_wrist01
+    100030: Neck01
+    100032: r_cravicre01
+    100034: r_erbow01
+    100036: r_foot01
+    100038: r_hand1
+    100040: r_hip01
+    100042: r_knee01
+    100044: r_shourder01
+    100046: r_toe01
+    100048: r_wrist01
+    100050: Root01
+    100052: Spine01
+    400000: Bones_Grp
+    400002: Char_1:Mesh
+    400004: //RootNode
+    400006: Geometry
+    400008: Head01
+    400010: joint1
+    400012: l_clavicle01
+    400014: l_elbow01
+    400016: l_foot01
+    400018: l_hand
+    400020: l_hip01
+    400022: l_knee01
+    400024: l_shoulder01
+    400026: l_toe01
+    400028: l_wrist01
+    400030: Neck01
+    400032: r_cravicre01
+    400034: r_erbow01
+    400036: r_foot01
+    400038: r_hand1
+    400040: r_hip01
+    400042: r_knee01
+    400044: r_shourder01
+    400046: r_toe01
+    400048: r_wrist01
+    400050: Root01
+    400052: Spine01
+    4300000: Char_1:Mesh
+    7400000: walk_anim01
+    7400002: run_anim01
+    7400004: idle_anim01
+    7400006: jump_anim01
+    9500000: //RootNode
+    13700000: Char_1:Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk_anim01
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bones_Grp
+        weight: 1
+      - path: Bones_Grp/Root01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01/l_wrist01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01/l_wrist01/l_hand
+        weight: 0
+      - path: Bones_Grp/Root01/joint1/Spine01/Neck01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/Neck01/Head01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01/r_wrist01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01/r_wrist01/r_hand1
+        weight: 0
+      - path: Bones_Grp/Root01/l_hip01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01/l_foot01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01/l_foot01/l_toe01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01/r_foot01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01/r_foot01/r_toe01
+        weight: 1
+      - path: Geometry
+        weight: 0
+      - path: Geometry/Char_1:Mesh
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run_anim01
+      takeName: Take 001
+      firstFrame: 27
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bones_Grp
+        weight: 1
+      - path: Bones_Grp/Root01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01/l_wrist01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01/l_wrist01/l_hand
+        weight: 0
+      - path: Bones_Grp/Root01/joint1/Spine01/Neck01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/Neck01/Head01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01/r_wrist01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01/r_wrist01/r_hand1
+        weight: 0
+      - path: Bones_Grp/Root01/l_hip01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01/l_foot01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01/l_foot01/l_toe01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01/r_foot01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01/r_foot01/r_toe01
+        weight: 1
+      - path: Geometry
+        weight: 0
+      - path: Geometry/Char_1:Mesh
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle_anim01
+      takeName: Take 001
+      firstFrame: 46
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bones_Grp
+        weight: 1
+      - path: Bones_Grp/Root01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01/l_wrist01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01/l_wrist01/l_hand
+        weight: 0
+      - path: Bones_Grp/Root01/joint1/Spine01/Neck01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/Neck01/Head01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01/r_wrist01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01/r_wrist01/r_hand1
+        weight: 0
+      - path: Bones_Grp/Root01/l_hip01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01/l_foot01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01/l_foot01/l_toe01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01/r_foot01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01/r_foot01/r_toe01
+        weight: 1
+      - path: Geometry
+        weight: 0
+      - path: Geometry/Char_1:Mesh
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump_anim01
+      takeName: Take 001
+      firstFrame: 87
+      lastFrame: 109
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bones_Grp
+        weight: 1
+      - path: Bones_Grp/Root01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01/l_wrist01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/l_clavicle01/l_shoulder01/l_elbow01/l_wrist01/l_hand
+        weight: 0
+      - path: Bones_Grp/Root01/joint1/Spine01/Neck01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/Neck01/Head01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01/r_wrist01
+        weight: 1
+      - path: Bones_Grp/Root01/joint1/Spine01/r_cravicre01/r_shourder01/r_erbow01/r_wrist01/r_hand1
+        weight: 0
+      - path: Bones_Grp/Root01/l_hip01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01/l_foot01
+        weight: 1
+      - path: Bones_Grp/Root01/l_hip01/l_knee01/l_foot01/l_toe01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01/r_foot01
+        weight: 1
+      - path: Bones_Grp/Root01/r_hip01/r_knee01/r_foot01/r_toe01
+        weight: 1
+      - path: Geometry
+        weight: 0
+      - path: Geometry/Char_1:Mesh
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Root01
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_hip01
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_hip01
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_knee01
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_knee01
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_foot01
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_foot01
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine01
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck01
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head01
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_clavicle01
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_cravicre01
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_shoulder01
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_shourder01
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_elbow01
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_erbow01
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_wrist01
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_wrist01
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_toe01
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_toe01
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Character_Animations_2(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bones_Grp
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root01
+      parentName: 
+      position: {x: -1.11022276e-16, y: 0.029999997, z: 0.0010996147}
+      rotation: {x: -0.0000000080070945, y: -0.0000000080070945, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint1
+      parentName: 
+      position: {x: -0.0039286357, y: -4.683297e-10, z: -2.7441611e-11}
+      rotation: {x: -3.2933803e-16, y: 1.613159e-16, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine01
+      parentName: 
+      position: {x: 3.450918e-18, y: 0.0036634142, z: 1.9938243e-10}
+      rotation: {x: 6.30892e-16, y: 1.4023804e-16, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_clavicle01
+      parentName: 
+      position: {x: 0.00014660195, y: -0.0029453672, z: -0.0010996149}
+      rotation: {x: -1.0946283e-15, y: -1.1448226e-15, z: 0.6672893, w: 0.74479866}
+      scale: {x: 0.99999994, y: 0.99999976, z: 1}
+    - name: l_shoulder01
+      parentName: 
+      position: {x: -0.0029631741, y: 0.000000001075651, z: -4.656613e-10}
+      rotation: {x: -0.020266345, y: -0.004752142, z: 0.08101796, w: 0.9964953}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: l_elbow01
+      parentName: 
+      position: {x: -0.010158237, y: 4.909818e-10, z: -4.991669e-10}
+      rotation: {x: 0.0706537, y: 0.040176786, z: -0.01665606, w: 0.99655235}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1.0000002}
+    - name: l_wrist01
+      parentName: 
+      position: {x: -0.007939466, y: 0.000000018391146, z: -0.00000000381726}
+      rotation: {x: -0.024574596, y: -0.052920714, z: 0.0043201796, w: 0.998287}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: l_hand
+      parentName: 
+      position: {x: -0.003804626, y: 0.00012799082, z: -0.000003637525}
+      rotation: {x: 8.737439e-10, y: -0.0000000020865858, z: -0.000000005125808, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Neck01
+      parentName: 
+      position: {x: -0.0025314584, y: -3.0177313e-10, z: 4.0657708e-10}
+      rotation: {x: -0.6993154, y: 0.10468024, z: 0.10468024, w: 0.6993154}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: Head01
+      parentName: 
+      position: {x: -0.0029741942, y: -0.000000004538534, z: -3.8443207e-10}
+      rotation: {x: 0.4204706, y: -0.56851083, z: 0.4204706, w: 0.56851083}
+      scale: {x: 0.99999964, y: 0.9999999, z: 0.9999999}
+    - name: r_cravicre01
+      parentName: 
+      position: {x: 0.0001466569, y: 0.0029453693, z: -0.0010996163}
+      rotation: {x: 0.6672893, y: 0.74479866, z: -6.9027367e-10, w: -0.00000003354337}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: r_shourder01
+      parentName: 
+      position: {x: 0.002963171, y: -0.00000006936658, z: -0.000000001717314}
+      rotation: {x: -0.02024971, y: -0.0047508357, z: 0.08101711, w: 0.99649566}
+      scale: {x: 0.99999994, y: 0.99999964, z: 0.99999964}
+    - name: r_erbow01
+      parentName: 
+      position: {x: 0.010158311, y: 0.00000001510328, z: -0.000000004395907}
+      rotation: {x: 0.0706537, y: 0.04017579, z: -0.01665595, w: 0.9965524}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000004}
+    - name: r_wrist01
+      parentName: 
+      position: {x: 0.007939413, y: -0.000000016358392, z: -0.000000003140922}
+      rotation: {x: 0.05292277, y: -0.024591472, z: -0.9982865, w: 0.004319583}
+      scale: {x: 1, y: 1, z: 1.0000004}
+    - name: r_hand1
+      parentName: 
+      position: {x: -0.0038046201, y: 0.00012799977, z: 0.000003670252}
+      rotation: {x: 0.000000005504343, y: -0.000000003014498, z: 1, w: 0.000000033191707}
+      scale: {x: -1, y: -1.0000001, z: -0.99999994}
+    - name: l_hip01
+      parentName: 
+      position: {x: 0.0027935735, y: -0.0037996792, z: 0.0004767839}
+      rotation: {x: -0.037499223, y: 0.7061118, z: 0.7061118, w: 0.037499264}
+      scale: {x: 0.99999976, y: 1, z: 0.9999999}
+    - name: l_knee01
+      parentName: 
+      position: {x: -0.012727197, y: -5.8846476e-11, z: 0.000000001294956}
+      rotation: {x: -0.99059266, y: -0.13684392, z: 0.000000044281716, w: -0.000000044935746}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: l_foot01
+      parentName: 
+      position: {x: -0.011153653, y: -9.615851e-10, z: -9.2284974e-10}
+      rotation: {x: 0.8357208, y: 0.5491547, z: 0.000000035411855, w: -0.00000007860236}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: l_toe01
+      parentName: 
+      position: {x: -0.004710373, y: 1.9161009e-10, z: -3.8369827e-10}
+      rotation: {x: -0.20102185, y: -0.6779309, z: -0.2010219, w: 0.6779309}
+      scale: {x: 0.99999976, y: 1.0000001, z: 0.99999976}
+    - name: r_hip01
+      parentName: 
+      position: {x: 0.0027935896, y: 0.0037996823, z: 0.00047678634}
+      rotation: {x: 0.7061117, y: 0.037499286, z: 0.037499327, w: -0.70611185}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.99999976}
+    - name: r_knee01
+      parentName: 
+      position: {x: 0.012727192, y: 0.000000009546105, z: 0.0000000020801825}
+      rotation: {x: -0.9905926, y: -0.13684449, z: 0.000000009164974, w: -0.000000063417104}
+      scale: {x: 1, y: 0.9999998, z: 1.0000001}
+    - name: r_foot01
+      parentName: 
+      position: {x: 0.011153638, y: -4.520771e-11, z: -0.000000002460921}
+      rotation: {x: 0.8357205, y: 0.54915506, z: 0.000000046346496, w: -0.00000007843183}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.9999999}
+    - name: r_toe01
+      parentName: 
+      position: {x: 0.0047103707, y: -0.000000002500394, z: -5.291762e-10}
+      rotation: {x: -0.20102192, y: -0.6779309, z: -0.20102191, w: 0.6779309}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
+    - name: Geometry
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Char_1:Mesh
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

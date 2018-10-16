@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{6B231331-83FB-D111-7ACC-D435B2D8706E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_1;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AI\AIBase.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AI\AILerp.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AI\AIPath.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AI\Seeker.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AI\TurnBasedAI.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AstarData.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AstarMath.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\AstarPath.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\GraphUpdateScene.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\GraphUpdateShape.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\AnimationLink.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\ArrayPool.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\AstarDebugger.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\AstarEnumFlagAttr.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\BinaryHeap.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\Draw.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\EditorResourceHelper.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\GraphEditorBase.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\GraphModifier.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\GraphUpdateProcessor.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\Int3.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\ListPool.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\MovementUtilities.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\NodeLink.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\NodeLink2.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\NodeLink3.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\ObjectPool.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\PathInterpolator.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\PathPool.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\PathProcessor.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\PathReturnQueue.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\StackPool.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\ThreadControlQueue.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\WindowsStoreCompatibility.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Misc\WorkItemProcessor.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Nodes\GraphNode.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Path.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\PathHandler.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Serialization\JsonConverters.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Serialization\JsonSerializer.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Serialization\SimpleJsonReplacement.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Serialization\SimpleZipReplacement.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\Serialization\TinyJson.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\VersionedMonoBehaviour.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Core\astarclasses.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\ExampleScenes\Example12_Procedural\ProceduralGridMover.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\ExampleScenes\Example12_Procedural\ProceduralWorld.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\ExampleScenes\ExampleScripts\AstarSmoothFollow2.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\ExampleScenes\ExampleScripts\DoorController.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\ExampleScenes\ExampleScripts\DynamicGridObstacle.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAI.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\ExampleScenes\ExampleScripts\ObjectPlacer.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\ExampleScenes\ExampleScripts\TargetMover.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Base.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\GridGenerator.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\NavMeshGenerator.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\NavmeshBase.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\NodeClasses\GridNode.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\NodeClasses\GridNodeBase.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\NodeClasses\PointNode.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\NodeClasses\TriangleMeshNode.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\PointGenerator.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\QuadtreeGraph.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Utilities\BBTree.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Utilities\EuclideanEmbedding.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Utilities\GraphTransform.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Utilities\GridLookup.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Utilities\NavMeshRenderer.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Utilities\NavmeshTile.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Utilities\ObjImporter.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Generators\Utilities\PointKDTree.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Legacy\LegacyAIPath.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Modifiers\AlternativePath.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Modifiers\FunnelModifier.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Modifiers\Modifiers.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Modifiers\RaycastModifier.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Modifiers\SimpleSmoothModifier.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Modifiers\StartEndModifier.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Navmesh\RelevantGraphSurface.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Pathfinders\ABPath.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\TurnBased\BlockManager.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\TurnBased\SingleNodeBlocker.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\AstarChecksum.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\AstarMemory.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\AstarProfiler.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\DotNetReplacements.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\Funnel.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\GraphGizmoHelper.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\GraphUpdateUtilities.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\LockFreeStack.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\PathUtilities.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\ProfileHelper.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\RetainedGizmos.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+     <Compile Include="Assets\3rdParty\AStar\AstarPathfindingProject\changelog.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\CreatingVolumesFromCode\CreateVoxelDatabase\CreateVoxelDatabase.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\CreatingVolumesFromCode\MazeFromImage\ColoredCubeMazeFromImage.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\CreatingVolumesFromCode\ProceduralGeneration\ProceduralTerrainVolume.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\CreatingVolumesFromCode\ProceduralGeneration\SimplexNoise.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\CreatingVolumesFromCode\SimpleTerrainVolume\SimpleTerrainVolume.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\SharedAssets\Scripts\CameraScript.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\SharedAssets\Scripts\ClickToCarveTerrainVolume.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\SharedAssets\Scripts\ClickToDestroy.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\SharedAssets\Scripts\MeshSyncHandler.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\SharedAssets\Scripts\SpawnPhysicsObjectsOnMeshSync.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\SolarSystem\Earth.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\SolarSystem\Moon.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Examples\SolarSystem\TrackEarth.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\ByteArray.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\ColoredCubesVolume.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\ColoredCubesVolumeCollider.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\ColoredCubesVolumeData.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\ColoredCubesVolumeRenderer.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\CubiquityException.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\CameraUtils.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\Clock.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\ColoredCubesVertex.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\CuOctreeNode.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\CubiquityDLL.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\DebugUtils.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\ExtensionMethods.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\Installation.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\Licensing.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\MeshConversion.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\OctreeNode.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\TerrainVertex.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Impl\Utility.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\MaterialSet.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Paths.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Picking.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\QuantizedColor.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Region.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\TerrainVolume.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\TerrainVolumeCollider.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\TerrainVolumeData.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\TerrainVolumeEditor.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\TerrainVolumeGenerator.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\TerrainVolumeRenderer.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Vector3i.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\Volume.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\VolumeCollider.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\VolumeData.cs" />
+     <Compile Include="Assets\3rdParty\Cubiquity\Scripts\VolumeRenderer.cs" />
+     <Compile Include="Assets\3rdParty\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\3rdParty\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\3rdParty\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\3rdParty\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\3rdParty\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Demo\Scripts\AxisRotator.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Demo\Scripts\DemoScene1.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Demo\Scripts\DemoScene2.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\Camera\RainCameraController.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\Common\DropTrail.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\Common\RainBehaviourBase.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\Common\RainDrawer.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\Common\RainDrawerContainer.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\Common\RainDropTools.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\Misc\BloodRainCameraController.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\Misc\FpsDisplay.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\FlowRain\FlowRainBehaviour.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\FlowRain\FlowRainController.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\FlowRain\FlowRainVariables.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\FrictionFlowRain\FrictionFlowRainBehaviour.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\FrictionFlowRain\FrictionFlowRainController.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\FrictionFlowRain\FrictionFlowRainVariables.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\SimpleRain\SimpleRainBehaviour.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\SimpleRain\SimpleRainController.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\SimpleRain\SimpleRainVariables.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\StaticRain\StaticRainBehaviour.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\StaticRain\StaticRainController.cs" />
+     <Compile Include="Assets\3rdParty\RainDropEffect2\Scripts\RainBehaviours\StaticRain\StaticRainVariables.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\3rdParty\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+     <Compile Include="Assets\AdjustToSun.cs" />
+     <Compile Include="Assets\CanvasUebungen.cs" />
+     <Compile Include="Assets\CreateVoxelLandscape.cs" />
+     <Compile Include="Assets\DestroyMe.cs" />
+     <Compile Include="Assets\FaceAnimationsCS.cs" />
+     <Compile Include="Assets\GrainFieldGrowth.cs" />
+     <Compile Include="Assets\HeliWingsSpin.cs" />
+     <Compile Include="Assets\Kinect\GreenScreen\Scripts\CoordinateMapperManager.cs" />
+     <Compile Include="Assets\Kinect\GreenScreen\Scripts\CoordinateMapperView.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\BodySourceManager.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\BodySourceView.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\ColorSourceManager.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\ColorSourceView.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\DepthSourceManager.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\DepthSourceView.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\DisableOnStart.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\InfraredSourceManager.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\InfraredSourceView.cs" />
+     <Compile Include="Assets\Kinect\KinectView\Scripts\MultiSourceManager.cs" />
+     <Compile Include="Assets\KinectGetDistance.cs" />
+     <Compile Include="Assets\MillWingsSpin.cs" />
+     <Compile Include="Assets\PlayFaceAnimationsCS.cs" />
+     <Compile Include="Assets\RopeScript.cs" />
+     <Compile Include="Assets\ScriptsIoannis\FubiInterface.cs" />
+     <Compile Include="Assets\ShowHideText.cs" />
+     <Compile Include="Assets\Spawnable.cs" />
+     <Compile Include="Assets\SpawnableChurch.cs" />
+     <Compile Include="Assets\SpawnableField.cs" />
+     <Compile Include="Assets\SpawnableHouse.cs" />
+     <Compile Include="Assets\SpawnablePool.cs" />
+     <Compile Include="Assets\SpawnableShip.cs" />
+     <Compile Include="Assets\SpawnableSilo.cs" />
+     <Compile Include="Assets\SpawnableSolar.cs" />
+     <Compile Include="Assets\SpawnableTownHall.cs" />
+     <Compile Include="Assets\SpawnableTree.cs" />
+     <Compile Include="Assets\SpawnableWaterTower.cs" />
+     <Compile Include="Assets\SpawnableWindTurbine.cs" />
+     <Compile Include="Assets\SpawnableWindmill.cs" />
+     <Compile Include="Assets\SpriteHoloFlicker.cs" />
+     <Compile Include="Assets\SpriteLookAtCamera.cs" />
+     <Compile Include="Assets\SunMoonMovement.cs" />
+     <Compile Include="Assets\SwitchOnAtNight.cs" />
+     <Compile Include="Assets\VillagerMovement.cs" />
+     <Compile Include="Assets\moveCrane.cs" />
+     <Compile Include="Assets\normalizeRotation.cs" />
+     <Compile Include="Assets\rotateAroundCenter.cs" />
+     <Compile Include="Assets\shipWaves.cs" />
+     <None Include="Assets\StreamingAssets\Cubiquity\VoxelDatabases\CreatedForAssets\Readme.txt" />
+     <None Include="Assets\StreamingAssets\Cubiquity\VoxelDatabases\Examples\ImportedCityLicense.txt" />
+     <None Include="Assets\StreamingAssets\Cubiquity\VoxelDatabases\Examples\Tests\Readme.txt" />
+     <None Include="Assets\StreamingAssets\Cubiquity\SDK\Windows\x86-64\_howto.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="FubiNET">
+ <HintPath>C:/Users/Jo/Documents/_UniBremen/2017/Adaptify/Demonstrator3/Demonstrator3/Assets/FubiNET.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>C:/Users/Jo/Documents/_UniBremen/2017/Adaptify/Demonstrator3/Demonstrator3/Assets/3rdParty/AStar/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C95A611F-DA96-062E-D0E7-A2D846D611AB}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
